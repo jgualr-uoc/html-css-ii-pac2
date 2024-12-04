@@ -1,0 +1,11 @@
+.speakers {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem  2rem;
+}
+
+.speaker {
+    max-width: 350px;
+    margin: auto;
+    overflow: hidden;
+}
