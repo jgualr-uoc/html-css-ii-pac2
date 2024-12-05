@@ -1,20 +1,20 @@
 .article-header {
     background: linear-gradient(rgba($primary, 0.7), $primary), url('../images/article-1-1.webp'),;
+    background-repeat: none;
     background-position: center;
     background-size: cover;
-    background-repeat: none;
 
 }
 
 blockquote {
+    padding: 1rem;
+    margin: 1rem 0;
     font-size: 1.5rem;
     font-style: italic;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 6px;
-    border-left: 5px solid $primary;
-    background-color: $light;
     color: $dark;
+    background-color: $light;
+    border-left: 5px solid $primary;
+    border-radius: 6px;
 
     &:has(.autor) {
         span {
@@ -47,14 +47,14 @@ blockquote {
         margin: 1rem 0;
 
         &::marker {
-            color: $primary;
             font-weight: bold;
+            color: $primary;
         }
 
         strong {
-            color: $primary;
             display: block;
             font-size: 110%;
+            color: $primary;
         }
     }
 }

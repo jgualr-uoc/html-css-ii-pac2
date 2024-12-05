@@ -1,13 +1,17 @@
-header {
-    nav {
+    header {
+        nav {
+            min-height: 10dvh !important;
+        }
+    }
+
+    main {
+        min-height: 80dvh !important;
+    }
+
+    footer {
         min-height: 10dvh !important;
     }
-}
 
-main {
-    min-height: 80dvh !important;
-}
-
-footer {
-    min-height: 10dvh !important;
-}
+    h1 {
+        text-align: center;
+    }
