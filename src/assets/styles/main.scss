@@ -24,13 +24,13 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
-
+@import "defaults";
 @import "layouts/home";
 @import "layouts/participants";
 @import "layouts/article";
+@import "layouts/inscripcio";
 
 /**
  * Do NOT include anything else in this file!
  */
-
 

@@ -13,7 +13,25 @@
   <include src="header.html"></include>
 
   <main>
-    <div class="container">
+    <div class="container py-5 inscripcio d-flex align-items-center justify-content-center">
+      <div>
+        <h1 class="text-center py-5">Inscripcio</h1>
+        <form action="" netlify>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nom *</label>
+            <input type="text" class="form-control" id="name" aria-describedby="name">
+          </div>
+          <div class="mb-3">
+            <label for="emil" class="form-label">Correu Electronic *</label>
+            <input type="email" class="form-control" id="email" aria-describedby="email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Telèfon *</label>
+            <input type="phone" class="form-control" id="phone" aria-describedby="phone">
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+      </div>
 
     </div>
   </main>
