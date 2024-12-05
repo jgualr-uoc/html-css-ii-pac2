@@ -1,26 +1,104 @@
 .banner {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba($white, 0.7), rgba($white, 0.7)), url("../images/home.webp") no-repeat center center/cover;
+
     h1,
-    h2 {
+    h2,
+    p,
+    button {
+        margin: 0;
         text-align: center;
     }
 
-    h1{
-        margin-top: 2rem;
-    }
-    h2 {
-        margin-bottom: 2rem;
+    p {
+        margin: 0;
+        text-align: center;
     }
 
-    .img-wrapper {
-        height: 60vh;
-        width: 100%;
-        overflow: hidden;
+}
 
-        img {
-            width: 100%;
+@supports (display:grid) {
+    .banner {
+        .container {
+            display: grid;
             height: 100%;
-            object-fit: cover;
-            object-position: center;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr 3fr 0.5fr 0.5fr;
+        }
+
+        h1 {
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
+            align-self: center;
+        }
+
+        h2 {
+            grid-column: 1 / 5;
+            grid-row: 2 / 3;
+            align-self: center;
+        }
+
+        p {
+            width: 100%;
+            grid-column: 1 / 5;
+            grid-row: 4 / 5;
+            align-self: center;
+        }
+
+        button {
+            grid-column: 2 / 4;
+            grid-row: 5 / 6;
+            align-self: center;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .banner {
+
+            h1,
+            h2,
+            p,
+            button {
+                grid-column: 2 / 4;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .banner {
+
+            h1,
+            h2 {
+                text-align: right;
+                grid-column: 3 / 5;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        .banner {
+
+            h1,
+            h2 {
+                text-align: right;
+                grid-column: 4 / 5;
+            }
+
+            p {
+                text-align: left;
+                grid-column: 1 / 2;
+                grid-row: 4 / 5;
+
+            }
+
+            button {
+                grid-column: 1 / 2;
+                grid-row: 5 / 6;
+            }
         }
     }
 }
